@@ -21,7 +21,7 @@ Author_id column for members who don't have a S2A id must be blank.
 	1- csv file as output
 	2- csv file as report 
 
-Currently, the script is using doi number for getting bibliography column. so it can't get data for publications without doi.
+Currently, the script is using doi number for getting bibliography. so it can't get data for publications without doi.
 
 ## Attention
 Output list may include articles that don't belong to the author due to S2A errors. It is recommended to check manually.
