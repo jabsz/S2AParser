@@ -1,6 +1,9 @@
 # S2AParser
 A small script to fetch a list of publication from semanticscholar
 
+## Dependencies:
+semanticscholar 
+
 # usage
 S2AParser.py [-h] [-i INPUT] [-o OUTPUT]
                     [-sy Start Year, default = 2020]
