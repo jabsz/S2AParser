@@ -18,8 +18,8 @@ Any csv file that includes these columns: Name, author_id.
 Author_id column for members who don't have a S2A id must be blank.
 
 ## The software outputs two files. 
-		1- csv file as output
-		2- csv file as report 
+	1- csv file as output
+	2- csv file as report 
 
 Currently, the script is using doi number for getting bibliography column. so it can't get data for publications without doi.
 
