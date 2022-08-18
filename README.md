@@ -2,15 +2,15 @@
 A small script to fetch a list of publication from semanticscholar
 
 ## Dependencies:
-[Numpy](https://pypi.org/project/numpy/)
-[Pandas](https://pypi.org/project/pandas/)
+[Numpy](https://pypi.org/project/numpy/)  
+[Pandas](https://pypi.org/project/pandas/)  
 [SemanticScholar](https://pypi.org/project/semanticscholar/)
 
 
 ## usage
-S2AParser.py [-h] [-i INPUT] [-o OUTPUT]
-                    [-sy Start Year, default = 2020]
-                    [-ey End Year, default = 2022] [-t TIMEOUT]
+S2AParser.py [-h] [-i INPUT] [-o OUTPUT]  
+                    [-sy Start Year, default = 2020]  
+                    [-ey End Year, default = 2022] [-t TIMEOUT]  
 
 
 
