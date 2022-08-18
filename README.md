@@ -2,9 +2,11 @@
 A small script to fetch a list of publication from semanticscholar
 
 ## Dependencies:
-[Requests](https://pypi.org/project/requests/)
-[Pandas](https://pypi.org/project/pandas/)  
+
 [SemanticScholar](https://pypi.org/project/semanticscholar/)
+[Pandas](https://pypi.org/project/pandas/)  
+[Requests](https://pypi.org/project/requests/)  
+
 
 
 ## usage
