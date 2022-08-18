@@ -1,19 +1,11 @@
-#!/usr/bin/env python
-import sys
-import os
+#!/usr/bin/env python3
 import argparse
-import re
-import numpy as np
 import pandas as pd
 import json
-import sys
 import requests
-import itertools
-from semanticscholar import SemanticScholar
-from itertools import islice
-from collections import OrderedDict
-from datetime import datetime
 import logging
+from semanticscholar import SemanticScholar
+from datetime import datetime
 
 # Parts of this script was inspired from PHP CrossRef Client
 
