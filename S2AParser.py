@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import argparse
 import pandas as pd
 import json
@@ -10,8 +11,9 @@ from datetime import datetime
 # Parts of this script was inspired from PHP CrossRef Client
 
 startTime = datetime.now()
-print("Please wait, fetching the data takes a while...")
 # prerequisits: 1-semanticscholar,
+this_year=startTime.year
+last_year=this_year-1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generates a table containing a list of authors and pulications",
@@ -19,12 +21,15 @@ if __name__ == '__main__':
     parser.add_argument("-i", "--input", type=argparse.FileType(mode='r'), help="Input Path")
     parser.add_argument("-o", "--output", type=argparse.FileType('wb', 0), help="Output Path",
                         default='output.csv')
-    parser.add_argument("-sy", "--yearS", type=int, help="Specify start year", metavar='Start Year, default = 2020',
-                        default=2020)
-    parser.add_argument("-ey", "--yearE", type=int, help="Specify end year", metavar='End Year, default = 2022',
-                        default=2022)
+    parser.add_argument("-sy", "--yearS", type=int, help="Specify start year",
+                        metavar='Start Year, default = Last Year',
+                        default=last_year)
+    parser.add_argument("-ey", "--yearE", type=int, help="Specify end year", metavar='End Year, default = This Year',
+                        default=this_year)
     parser.add_argument("-t", "--timeout", type=int, help="Specify Timeout", default=30000)
     args = parser.parse_args()
+
+print("Please wait, fetching the data takes a while...")
 
 
 class CrossRefClient(object):
@@ -55,6 +60,7 @@ class CrossRefClient(object):
         self.headers['accept'] = 'application/vnd.citationstyles.csl+json'
         return self.query(doi).json()
 
+
 author_list = pd.read_csv(args.input)
 author_id = author_list['author_id']
 
@@ -69,7 +75,7 @@ for id in author_id:
     author = sch.author(id)
     author_paper = (author['papers'])
     author_name = (author['name'])
-    df_papers = pd.DataFrame().append(author_paper, ignore_index=True)
+    df_papers = pd.DataFrame(author_paper)
     year_paper = df_papers[((df_papers['year'] >= args.yearS) & (df_papers['year'] <= args.yearE))]
 
     paper_id = (year_paper['paperId'])
@@ -88,8 +94,6 @@ for id in author_id:
         df_table = pd.DataFrame(table)
 
 # get the doi number and generate apa format for bibliography
-
-
 cite = []
 for doi in df_table[2]:
     try:
