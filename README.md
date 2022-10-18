@@ -11,8 +11,8 @@ A small script to fetch a list of publication from semanticscholar
 
 ## usage
 python3 S2AParser.py [-h] [-i, INPUT] [-o, OUTPUT]
-             [-sy, Start Year, default = Last Year]
-             [-ey, End Year, default = This Year] [-t, TIMEOUT]
+             [-sy, Start Year] Default = Last Year
+             [-ey, End Year] Default = This Year
 
 
 
