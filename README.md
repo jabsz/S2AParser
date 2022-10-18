@@ -10,9 +10,9 @@ A small script to fetch a list of publication from semanticscholar
 
 
 ## usage
-python3 S2AParser.py [-h] [-i INPUT] [-o OUTPUT]
-             [-sy Start Year, default = Last Year]
-             [-ey End Year, default = This Year] [-t TIMEOUT]
+python3 S2AParser.py [-h] [-i, INPUT] [-o, OUTPUT]
+             [-sy, Start Year, default = Last Year]
+             [-ey, End Year, default = This Year] [-t, TIMEOUT]
 
 
 
