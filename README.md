@@ -1,9 +1,8 @@
 # S2AParser
-A small script to fetch a list of publication from semanticscholar
+A small script to fetch a list of publications from Semantic Scholar
 
 ## Dependencies:
 
-[SemanticScholar](https://pypi.org/project/semanticscholar/)  
 [Pandas](https://pypi.org/project/pandas/)  
 [Requests](https://pypi.org/project/requests/)  
 
