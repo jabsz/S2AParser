@@ -9,20 +9,20 @@ A small script to fetch a list of publications from Semantic Scholar
 
 
 ## usage
-usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v].
-
-optional arguments:.
-  -h, --help            show this help message and exit.
-
-  -i INPUT, --input INPUT.
-                          Input Path
-  -o OUTPUT, --output OUTPUT
-                        Output Path
-  --yearS Start Year, default = Last Year
-                        Specify start year
-  --yearE End Year, default = This Year
-                        Specify end year
-  -v, --verbose         Turn on verbose output
+usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v]  
+  
+optional arguments:  
+  -h, --help            show this help message and exit  
+  
+  -i INPUT, --input INPUT  
+                          Input Path  
+  -o OUTPUT, --output OUTPUT  
+                        Output Path  
+  --yearS Start Year, default = Last Year  
+                        Specify start year  
+  --yearE End Year, default = This Year  
+                        Specify end year  
+  -v, --verbose         Turn on verbose output  
  
 
 
