@@ -9,7 +9,7 @@ A small script to fetch a list of publications from Semantic Scholar
 
 
 ## usage
-usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v]  
+usage: ./S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v]  
   
 optional arguments:  
   -h, --help            show this help message and exit  
