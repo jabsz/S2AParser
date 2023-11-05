@@ -9,22 +9,29 @@ A small script to fetch a list of publications from Semantic Scholar
 
 
 ## usage
-python3 S2AParser.py [-h] [-i, INPUT] [-o, OUTPUT]
-             [-sy, Start Year] Default = Last Year
-             [-ey, End Year] Default = This Year
+usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v]
+ S2AParser.py [-h] [-i INPUT] [-o OUTPUT] [-sy Start Year, default = Last Year] [-ey End Year, default = This Year] [-v verboes]  
+Generates a table containing a list of authors and publications
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Input Path
+  -o OUTPUT, --output OUTPUT
+                        Output Path
+  --yearS Start Year, default = Last Year
+                        Specify start year
+  --yearE End Year, default = This Year
+                        Specify end year
+  -v, --verbose         Turn on verbose output
+ 
 
 
 
 ## Template
 Any csv file that includes these columns: Name, author_id. 
 
-Author_id column for members who don't have a S2A id must be blank.
-
-## The software outputs two files. 
-	1- csv file as output
-	2- csv file as report 
-
-Currently, the script is using doi number for getting bibliography. so it can't get data for publications without doi.
+Remove members without author_id. 
 
 ## Attention
 Output list may include articles that don't belong to the author due to S2A errors. It is recommended to check manually.
