@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-###############################################################
+#####################
 # Author: Jaber Abbaszadeh 
 # Project: Annual report ERI University of Waikato 
 # This script takes semantic scholar author IDs and
-#   generates a list of publications for ERI annual report
-###############################################################
+#   generates a list of publication for ERI annual report
 
 import argparse
 import pandas as pd
@@ -22,10 +21,10 @@ if __name__ == '__main__':
     parser.add_argument("-i", "--input", type=argparse.FileType(mode='r'), help="Input Path")
     parser.add_argument("-o", "--output", type=argparse.FileType('wb', 0), help="Output Path",
                         default='output.csv')
-    parser.add_argument("--yearS", type=int, help="Specify start year",
+    parser.add_argument("-sy", "--yearS", type=int, help="Specify start year",
                         metavar='Start Year, default = Last Year',
                         default=last_year)
-    parser.add_argument("--yearE", type=int, help="Specify end year", metavar='End Year, default = This Year',
+    parser.add_argument("-ey", "--yearE", type=int, help="Specify end year", metavar='End Year, default = This Year',
                         default=this_year)
     parser.add_argument("-v", "--verbose", action="store_true", help="Turn on verbose output")
     args = parser.parse_args()
