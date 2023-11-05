@@ -11,10 +11,8 @@ A small script to fetch a list of publications from Semantic Scholar
 ## usage
 usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, default = Last Year] [--yearE End Year, default = This Year] [-v]
 
-Generates a table containing a list of authors and publications
-
-optional arguments:\n
-  -h, --help            show this help message and exit \n
+optional arguments:
+  -h, --help            show this help message and exit
 
   -i INPUT, --input INPUT \n
   
