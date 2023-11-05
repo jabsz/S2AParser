@@ -14,9 +14,8 @@ usage: S2A_json_parser.py [-h] [-i INPUT] [-o OUTPUT] [--yearS Start Year, defau
 optional arguments:
   -h, --help            show this help message and exit
 
-  -i INPUT, --input INPUT \n
-  
-                        Input Path
+  -i INPUT, --input INPUT
+                          Input Path
   -o OUTPUT, --output OUTPUT
                         Output Path
   --yearS Start Year, default = Last Year
